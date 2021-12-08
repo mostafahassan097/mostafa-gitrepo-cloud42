@@ -1,0 +1,45 @@
+Git Lab 1 Steps
+-------------------------------------
+1 - Configure Git after instralling
+--git config --global user.name "mostafahassan097"
+--git config --global user.email mostafahassan097@gmail.com'
+--git config --global core.editor vi
+============================================================================
+2- Create Directory on Local
+--mkdir gitrepo
+--cd gitrepo
+--git init
+============================================================================
+3- Creating Files 
+-- touch f1
+-- touch f2,f3,lab1-mostafa-hassan
+--  git add .
+-- git status
+-- git commit -m "creating files of repo"
+-- touch mostafa-hassan
+-- git add mostafa-hassan
+-- git status
+-- git commit -m "Create file mostafa hassan"
+-- git log 
+================================================================================
+4- Changing branch Mast to main
+--git branch -M main
+--git status
+================================================================================
+5- Define local repo on remote repo
+-- git remote add orgin2 git@github.com:mostafahassan097/mostafa-gitrepo-cloud42.git
+
+>>[mhassan@mha-pc gitrepo]$ git remote -v
+origin	git@github.com:mostafahassan097/mostafa-gitrepo-cloud42.git (fetch)
+origin	git@github.com:mostafahassan097/mostafa-gitrepo-cloud42.git (push)
+==============================================================================
+6- Generate SSh Key to be able to pussh without asking every time 
+--ssh-keygen -t rsa -b 4096 -C "mostafhassan097@gmail.com"
+-- cat /home/mhassan/.ssh/id_rsa.pub
+==============================================================================
+7- Adding generated key on account in settings
+========================================================================
+8- push repo
+
+git push origin main
+
